@@ -18,6 +18,16 @@
   font-optical-sizing: auto;
 }
 
+.smsans_regular{
+  font-family: "DM Sans";
+}
+.smsans_bold{
+  font-family: "DM Sans Bold";
+}
+.smsans_semibold{
+  font-family: "DM Sans SemiBold";
+}
+
 .h-title{
   font-family: "DM Sans Bold";
 }
