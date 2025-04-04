@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+.dark_bg {
+background-image: url('./assets/images/bg-dark-theme.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.light_bg {
+  background-image: url('./assets/images/bg-light-theme.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* card bg */
+.characters_count_bg{
+  background-color:  rgb(211, 160, 250);
+}
+
+.word_count_bg{
+  background-color:  rgb(255, 159, 0);
+}
+
+.sentence_count_bg{
+  background-color:  rgb(254, 129, 89);
+}
+
+/* text colors */
+
