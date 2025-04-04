@@ -32,12 +32,15 @@ background-size: cover;
 /* border and drop shadow here */
 .limit_ring{
   border-color: rgb(218, 55, 1);
-  box-shadow: 1px;
+  box-shadow: 10px;
+  @apply shadow-md 
 }
 
 .normal_ring{
   /* @apply shadow-sm; */
   border-color: rgb(194, 124, 248);
-  box-shadow: 1px;
+  box-shadow: 10px;
+  @apply shadow-md 
+
 }
 

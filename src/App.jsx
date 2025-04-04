@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useTheme } from './context/themeContext'
-import { countCharacter, countSentence, countWord } from './util/conuter'
+import { countCharacter, countSentence, countWord, readingTime } from './util/conuter'
 import Header from './component/Header'
 import CountCard from './component/CountCard'
 import CustomCheckbox from './component/Checkbox'
@@ -75,7 +75,7 @@ function App() {
                 {appState.charLimitToggle && <input value={appState.charLimit} onChange={e => setAppState({ ...appState, charLimit: e.target.valueAsNumber })} type='number' className={`border-[rgb(64,66,84)] ${isLight ? "text-[rgb(18,19,26)]" : "text-white"} w-16 border rounded-lg px-1 outline-none`} />}
               </div>
             </div>
-            <p className={isLight ? "text-[rgb(18,19,26)]" : "text-[rgb(228,228,239)]"}>Approx. reading time: &lt; 1 minute </p>
+            <p className={isLight ? "text-[rgb(18,19,26)]" : "text-[rgb(228,228,239)]"}>Approx. reading time: {readingTime(appState.text)} minute </p>
           </div>
         </div>
 
