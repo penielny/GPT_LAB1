@@ -17,7 +17,7 @@ export default function Header() {
     }
 
     return (
-        <header className="container mx-auto flex items-center justify-between py-5 px-5 md:px-0">
+        <header className="container mx-auto flex items-center justify-between py-5 px-5 lg:px-10 xl:px-20">
             <img className='h-8 md:h-auto' src={ isLight ? LightLogoIcon : DarkLogoIcon} />
             <div className="flex flex-row items-center">
                 <button onClick={toggleTheme} className={`${isLight ? "bg-[rgb(242,242,247)]" : "bg-[rgb(42,43,55)]"}  flex items-center justify-center h-10 w-10 rounded cursor-pointer`}>

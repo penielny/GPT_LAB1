@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useState } from 'react'
 import { useTheme } from './context/themeContext'
 import { countCharacter, countSentence, countWord, readingTime } from './util/conuter'
 import Header from './component/Header'
@@ -36,8 +36,8 @@ function App() {
   return (
     <main className={`h-screen flex flex-col space-y-5 w-full ${isLight ? "light_bg" : "dark_bg"} overflow-y-auto`}>
       <Header />
-      <div className="container mx-auto flex flex-col space-y-10 justify-center items-center">
-        <h3 className={`${isLight ? "text-black" : "text-[rgb(242,242,247)]"} text-center w-full text-5xl md:w-2/4 md:text-7xl scale-75 font-bold`}>Analyze your text in real-time.</h3>
+      <div className="container mx-auto flex flex-col space-y-10 justify-center items-center px-5 lg:px-10 xl:px-20">
+        <h3 className={`${isLight ? "text-black" : "text-[rgb(242,242,247)]"} text-center w-full text-6xl md:w-4/6 xl:px-10 md:text-7xl scale-75 font-bold h-title py-5`}>Analyze your text in real-time.</h3>
 
         <div className="w-full flex flex-col space-y-3 px-5 md:px-0">
           <div className='flex flex-col space-y-2'>
@@ -55,7 +55,7 @@ function App() {
                 setCharLimitError(false);
                 setAppState({ ...appState, text: inputText });
               }
-              } className={"flex w-full resize-none outline-none h-[20vh] p-5 cursor-pointer text-[20px]"}>
+              } className={"flex w-full resize-none outline-none h-[25vh] p-5 cursor-pointer text-[20px]"}>
 
               </textarea>
             </div>
